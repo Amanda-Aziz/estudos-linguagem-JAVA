@@ -37,4 +37,4 @@ Aqui está o plano do que pretendo aprender e registrar neste repositório:
 ## 👤 Autor
 
 Desenvolvido por **[Amanda-Aziz](https://github.com/Amanda-Aziz)**. 
-Se quiser acompanhar minha jornada ou se conectar comigo, você pode me encontrar no [LinkedIn](LinkDoSeuLinkedIn aqui).
+Se quiser acompanhar minha jornada ou se conectar comigo, você pode me encontrar no [LinkedIn](https://www.linkedin.com/in/amanda-aziz-30a30p/).
