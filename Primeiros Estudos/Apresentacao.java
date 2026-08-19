@@ -50,3 +50,15 @@ public class Main {
         entrada.close();
     }
 }
+
+// Scanner é uma classe usada para ler dados digitados pelo usuário.
+// "entrada" é o nome da variável que criamos para o Scanner.
+// new Scanner(System.in) cria um leitor conectado ao teclado (entrada padrão).
+//Scanner entrada = new Scanner(System.in);
+
+// nextLine() lê uma linha de texto digitada pelo usuário.
+// nextInt() lê um número inteiro digitado pelo usuário.
+// nextDouble() lê um número decimal digitado pelo usuário.
+
+// close() fecha o Scanner quando terminamos de usá-lo, liberando o recurso de entrada do teclado.
+
