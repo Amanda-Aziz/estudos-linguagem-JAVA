@@ -16,23 +16,22 @@ public class Professor {
 
     // MÉTODOS
 
-    // iniciarAula() -> alterar -> estado da sala     |     A classe SALA já tem um metodo de ALTERAR()
-    public void iniciarAula(){  // Professor é quem altera o estado da sala
+    // iniciarAula() -> alterar -> estado da sala     |     A classe SALA já tem o metodo de ALTERAR()
+    public void iniciarAula(){  // Professor altera o estado da sala
         sala.alterar();
     }
 
     public void chamada(){ //Fazer a chamada e marcar como presente (true) cada aluno da turma no dia de aula atual
         Aluno[] turma = sala.getTurma(); // turma será um vetor de Alunos[] | Pegando o vet de alunos q está dentro da sala
         for(int i=0; i<turma.length; i++){
-            turma[i].getPresenca()[sala.getDiaDeAula()] = true;
-        // ^^^^ pegando o aluno atual, a presença dele, qual o dia de aula atual e marcando como true
+        // pegando o aluno atual e a presença dele ???????????????? FZR 
         }
     }
 
     public void terminarAula(){
         sala.alterar(); //chamando o metodo de alternar da sala
-        sala.setDiaDeAula(sala.getDiaDeAula()+1);
-        //^^^ pegando o dia de aula atual, somando 1 e colocando o resultado como o novo dia de aula
+        sala.setDiaDeAula(sala.getDiaDeAula());
+        // pegando o dia de aula e dps tornando um novo dia
     }
 
     // GETS E SETS
