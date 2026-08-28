@@ -5,8 +5,8 @@ public class Main {
         //testando e criando as pessoas
 
         // Criando os alunos
-        Aluno aluno1 = new Aluno("Amanda Aziz", 20, 6);
-        Aluno aluno2 = new Aluno("Pedro Kawan", 21, 7);
+        Aluno aluno1 = new Aluno("Amanda Aziz", 20, 1);
+        Aluno aluno2 = new Aluno("Pedro Kawan", 21, 2);
 
         // Criando sala
         Sala sala = new Sala();
