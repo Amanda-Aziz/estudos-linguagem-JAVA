@@ -31,7 +31,7 @@ Aqui está o plano do que pretendo aprender e registrar neste repositório:
 
 ## 🛠️ Ferramentas Utilizadas
 
-- **Linguagem:** Java 13
+- **Linguagem:** Java 17
 - **IDE:** Apache NetBeans
 
 ## 👤 Autor
