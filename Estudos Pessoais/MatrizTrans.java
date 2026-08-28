@@ -1,6 +1,6 @@
 // imprimindo uma matriz de inteiros 3x3 transposta
 
-package MatrizT;
+//package MatrizT;
 
 public class MatrizTrans { // cria uma classe chamada MatrizTrans
     public static void main(String[] args){  // esta linha diz basicamente que o metodo main esta sendo executado (main: metodo principal executado quando o programa é iniciado)

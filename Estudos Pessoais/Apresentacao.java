@@ -19,7 +19,7 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class Apresentacao {
     public static void main(String[] arguments){
         Scanner entrada = new Scanner(System.in);
 

@@ -1,5 +1,3 @@
-package SalaOcupada;
-
 public class Main {
     public static void main(String[] args) {
         //testando e criando as pessoas
