@@ -2,18 +2,9 @@ package SalaOcupada;
 
 public class Sala {
     private String nome;
-    private  boolean ocupada;
+    private  boolean ocupada = false;
     private Aluno[] turma; //aqui crio um atributo chamado turma, vai ser um vetor de objetos do tipo Aluno.
-    private int diaDeAula;
-
-    // METODOS
-    public void alterar(){
-        if (ocupada == false){
-            ocupada = true;
-        } else {
-            ocupada = false;
-        }
-    }
+    private int diaDeAula = 0;
 
     // GETS E SETS
 
@@ -41,5 +32,12 @@ public class Sala {
     }
     public void setDiaDeAula(int diaDeAula){
         this.diaDeAula = diaDeAula;
+    }
+
+
+    // METODOS
+
+    public void alterar(){
+        ocupada = !ocupada;
     }
 }
