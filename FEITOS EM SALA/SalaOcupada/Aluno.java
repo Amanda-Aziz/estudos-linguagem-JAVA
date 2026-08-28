@@ -4,11 +4,11 @@ public class Aluno {
     private String nome;
     private int idade;
     private int matricula;
-    private boolean[] presenca; //tipo de dado usado quando só pd ser true ou false
+    private boolean[] presenca = new boolean[4]; //tipo de dado usado quando só pd ser true ou false
 
     //CONSTRUTOR: metodo usado para criar um objeto. Criar o objeto ja com determinados valores.
     public Aluno(String nome, int idade, int matricula){ //parâmetros. P criar um Aluno, vou receber nome, idade e matr.
-        this.nome = nome;
+        this.nome = nome; //this é AUTOREFERENCIA
         this.idade = idade;
         this.matricula = matricula;
     } 
