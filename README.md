@@ -22,17 +22,17 @@ Aqui está o plano do que pretendo aprender e registrar neste repositório:
 
 - [x] Configuração do ambiente de desenvolvimento
 - [x] Primeiro programa executado (`Olá Mundo!`)
-- [ ] Variáveis e tipos de dados (int, double, String...)
-- [ ] Estruturas condicionais (`if/else`, `switch-case`)
-- [ ] Estruturas de repetição (`for`, `while`)
-- [ ] Orientação a Objetos (Classes, Atributos, Métodos)
-- [ ] Pilares da POO (Abstração, Encapsulamento, Herança, Polimorfismo)
+- [x] Variáveis e tipos de dados (int, double, String...)
+- [x] Estruturas condicionais (`if/else`, `switch-case`)
+- [x] Estruturas de repetição (`for`, `while`)
+- [x] Orientação a Objetos (Classes, Atributos, Métodos)
+- [x] Pilares da POO (Abstração, Encapsulamento, Herança, Polimorfismo)
 - [ ] Tratamento de erros e exceções (`try/catch`)
 
 ## 🛠️ Ferramentas Utilizadas
 
-- **Linguagem:** Java 17
-- **IDE:** Apache NetBeans
+- **Linguagem:** Java 26
+- **IDE:** VS Code
 
 ## 👤 Autor
 
