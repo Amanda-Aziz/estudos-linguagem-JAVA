@@ -1,32 +1,27 @@
 public class Cliente {
-    private String nome;
     Ticket entrada;
+    private String nome;
     private double valor;
+
+    //GETS E SETS
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public double getValor() {
+        return valor;
+    }
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
 
     public Cliente(String nome, double valor){
         this.nome = nome;
         this.valor = valor;
-    }
-
-    // ========================= gets e sets =========================
-
-    public String getNome(){
-        return this.nome;
-    }
-
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-
-    public double getValor(){
-        return this.valor;
-    }
-
-    //public void setValor(){
-      //this.valor = valor;
-    //}
-
-    // ========================= gets e sets =========================
+    }    
 
     public void calculo(){
         if(entrada != null){
