@@ -1,3 +1,5 @@
+package INICIO;
+
 /******************************************************************************
  * DESCRIÇÃO:
  * Programa simples que captura a data e a hora atual do sistema operacional 
@@ -12,7 +14,6 @@
  * Data: 13 de Julho de 2026
  *******************************************************************************/
 
-package com.mycompany.horadosistema;
 import java.util.Date;
 
 public class HoraDoSistema {

@@ -1,3 +1,5 @@
+package INICIO;
+
 /******************************************************************************
  * DESCRIÇÃO:
  * Programa simples que identifica a resolução gráfica atual do monitor do 
@@ -12,11 +14,10 @@
  * Data: 13 de Julho de 2026
  *******************************************************************************/
 
-package com.mycompany.horadosistema;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 
-public class HoraDoSistema {
+public class ResolucaoTela {
 
     public static void main(String[] args) {
       

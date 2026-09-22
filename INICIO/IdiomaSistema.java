@@ -1,3 +1,5 @@
+package INICIO;
+
 /******************************************************************************
  * DESCRIÇÃO:
  * Programa simples que captura o idioma padrão configurado no sistema 
@@ -12,10 +14,9 @@
  * Data: 13 de Julho de 2026
  *******************************************************************************/
 
-package com.mycompany.horadosistema;
 import java.util.Locale;
 
-public class HoraDoSistema {
+public class IdiomaSistema {
 
     public static void main(String[] args) {
         Locale linguagem = Locale.getDefault();
