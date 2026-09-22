@@ -1,4 +1,4 @@
-public class Professor {
+public class Professor<Sala> {
     private String nome;
     private int idade;
     private int matricula;
@@ -15,12 +15,7 @@ public class Professor {
     //METODOS
     public void IniciarAula() {
         if (!sala.isOcupada()) {
-            System.out.println(
-                "A aula está acontecendo com o professor "
-                + nome
-                + ", matrícula "
-                + matricula
-            );
+            System.out.println("A aula está acontecendo com o professor "+ nome+ ", matrícula "+ matricula);
             sala.Alternar();
         } else {
             System.out.println("A sala está ocupada.");
@@ -28,6 +23,7 @@ public class Professor {
     }
 
     public void Chamada(boolean[] chamada) {
+        
         if (!sala.isOcupada()) {
             System.out.println("Não existe aula acontecendo.");
             return;
@@ -55,16 +51,9 @@ public class Professor {
         if (!sala.isOcupada()) {
             System.out.println("Não existe aula nela.");
         } else {
-            System.out.println(
-                "Aula finalizada pelo professor "
-                + nome
-                + ", matrícula "
-                + matricula
-            );
+            System.out.println("Aula finalizada pelo professor "+ nome+ ", matrícula "+ matricula);
             sala.Alternar();
-            sala.setDiaDeAula(
-                sala.getDiaDeAula() + 1
-            );
+            sala.setDiaDeAula(sala.getDiaDeAula() + 1);
         }
     }
 

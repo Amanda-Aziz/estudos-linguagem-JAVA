@@ -1,4 +1,4 @@
-public class Cliente {
+public class Cliente<Produto> {
     private String nome;
     private boolean vip;
     private Produto[] carrinho;
@@ -58,15 +58,12 @@ public class Cliente {
         double total = 0;
 
         for (int i = 0; i < carrinho.length; i++) {
-
             if (carrinho[i] != null) {
-
                 total += carrinho[i].getValor();
             }
         }
 
-        if (vip) {
-
+        if(vip){
             total = total * 0.90;
         }
 
@@ -80,7 +77,6 @@ public class Cliente {
         System.out.println("Total da compra: R$ " + total);
 
         for (int i = 0; i < carrinho.length; i++) {
-
             carrinho[i] = null;
         }
     }

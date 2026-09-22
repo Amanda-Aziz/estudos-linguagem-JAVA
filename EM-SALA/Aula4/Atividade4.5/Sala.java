@@ -1,21 +1,31 @@
-public class Sala {
+public class Sala<Aluno> {
     private String nome;
     private boolean ocupada;
     private Aluno[] turma;
     private int diaDeAula;
 
     //CONSTRUTOR
-    public Sala(String nome, boolean ocupada) {
+
+    // public Sala(String nome, boolean ocupada) {
+    //     this.nome = nome;
+    //     this.ocupada = ocupada;
+    //     this.turma = new Aluno[10];
+    //     this.diaDeAula = 0;
+    // }
+
+    public Sala(String nome, boolean ocupada, Aluno[] turma, int diaDeAula) {
         this.nome = nome;
         this.ocupada = ocupada;
-        this.turma = new Aluno[10];
-        this.diaDeAula = 0;
+        this.turma = turma;
+        this.diaDeAula = diaDeAula;
     }
 
     //metodo
     public void Alternar() {
         ocupada = !ocupada;
     }
+
+    
 
     //gets e sets
     public String getNome() {
