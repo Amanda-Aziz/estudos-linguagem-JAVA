@@ -1,5 +1,3 @@
-package INICIO;
-
 /******************************************************************************
  * DESCRIÇÃO:
  * Programa simples que captura o idioma padrão configurado no sistema 

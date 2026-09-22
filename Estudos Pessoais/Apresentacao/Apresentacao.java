@@ -61,4 +61,3 @@ public class Apresentacao {
 // nextDouble() lê um número decimal digitado pelo usuário.
 
 // close() fecha o Scanner quando terminamos de usá-lo, liberando o recurso de entrada do teclado.
-

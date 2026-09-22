@@ -9,18 +9,12 @@ public class Funcionario extends Cliente {
     }
 
     public void investimentoEspecial(double valor) {
-
         Random gerador = new Random();
-
         int sorteio = gerador.nextInt(100);
 
         if (sorteio < 60) {
-
             double rendimento = valor * 0.50;
-
-            getConta().setSaldo(
-                getConta().getSaldo() + rendimento
-            );
+            getConta().setSaldo(getConta().getSaldo() + rendimento);
         }
     }
 

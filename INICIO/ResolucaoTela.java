@@ -1,5 +1,3 @@
-package INICIO;
-
 /******************************************************************************
  * DESCRIÇÃO:
  * Programa simples que identifica a resolução gráfica atual do monitor do 

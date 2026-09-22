@@ -1,5 +1,3 @@
-package INICIO;
-
 /******************************************************************************
  * DESCRIÇÃO:
  * Programa simples que captura a data e a hora atual do sistema operacional 

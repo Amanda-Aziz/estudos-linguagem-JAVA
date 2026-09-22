@@ -1,4 +1,3 @@
-//package MaiorMenor;
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
@@ -13,6 +12,7 @@ public class Main{
             System.out.print("Digite o valor da posição " + (i+1) + ": ");
             vetor[i] = leitor.nextInt();
         }
+        
         int maior = vetor[0];
         int menor = vetor[0];
 
