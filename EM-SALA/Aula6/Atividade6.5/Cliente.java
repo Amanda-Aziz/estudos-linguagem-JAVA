@@ -5,7 +5,6 @@ public class Cliente {
     private String endereco;
     private boolean bomCliente;
     private Item[] carrinhoDeCompras;
-    public Ticket entrada;
 
     //================= CONSTRUTOR
     public Cliente(String nome, int idade, String cpf, String endereco, boolean bomCliente) {
@@ -18,8 +17,8 @@ public class Cliente {
     }
 
     //================= MÉTODOS
-    
-    public Cliente(String string, double d) {
+
+    public Cliente(String nome2, int idade2, Conta conta) {
         //TODO Auto-generated constructor stub
     }
 
@@ -120,10 +119,5 @@ public class Cliente {
     }
     public void setCarrinhoDeCompras(Item[] carrinhoDeCompras) {
         this.carrinhoDeCompras = carrinhoDeCompras;
-    }
-
-    public void calculo() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calculo'");
     }
 }

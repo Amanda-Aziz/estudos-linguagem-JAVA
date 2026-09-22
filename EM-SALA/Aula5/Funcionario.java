@@ -9,28 +9,19 @@ public class Funcionario extends Cliente {
         this.cargo = cargo;
     }
 
-    public void InvestimentoEspecial() {
+
+    public void investimentoEspecial(double valor) {
 
         Random gerador = new Random();
 
-        int sorteio = gerador.nextInt(0, 101);
+        int sorteio = gerador.nextInt(100);
 
         if (sorteio < 60) {
 
-            double rendimento = getConta().getSaldo() * 0.50;
+            double rendimento = valor * 0.50;
 
             getConta().setSaldo(
                 getConta().getSaldo() + rendimento
-            );
-
-            System.out.println(
-                "Investimento especial teve sucesso!"
-            );
-
-        } else {
-
-            System.out.println(
-                "Investimento especial não teve sucesso."
             );
         }
     }

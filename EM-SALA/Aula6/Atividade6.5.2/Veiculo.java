@@ -8,10 +8,8 @@ public class Veiculo {
     private double litragemTanque;
     private double velocidadeMaxima;
 
-    //CONSTRUTOR
-    public Veiculo(String marca, boolean estado, double tanque, double consumo,
-                   double velocidadeAtual, double litragemTanque,
-                   double velocidadeMaxima) {
+    // ============================================================ CONSTRUTOR
+    public Veiculo(String marca, boolean estado, double tanque, double consumo, double velocidadeAtual, double litragemTanque, double velocidadeMaxima) {
         this.marca = marca;
         this.estado = estado;
         this.tanque = tanque;
@@ -21,7 +19,7 @@ public class Veiculo {
         this.velocidadeMaxima = velocidadeMaxima;
     }
 
-    //METODOS
+    // ============================================================ METODOS
     public void Chavear() {
         estado = !estado;
     }
@@ -35,7 +33,9 @@ public class Veiculo {
             }
         }
     }
-
+    
+    // ===============================================
+    
     public void Frear() {
         if (velocidadeAtual > 0) {
             velocidadeAtual--;
@@ -45,7 +45,9 @@ public class Veiculo {
             }
         }
     }
-
+    
+    // ===============================================
+    
     public void Corrida(double distancia) {
         double litrosGastos = distancia * consumo;
 
@@ -67,7 +69,7 @@ public class Veiculo {
     }
 
 
-    //GETS E SETS
+    // ============================================================ GETS E SETS
     public String getMarca() {
         return marca;
     }

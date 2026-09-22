@@ -3,26 +3,25 @@ public class Conta {
     private String numero;
     private double saldo;
 
-    //CONSTRUTOR
     public Conta(String agencia, String numero, double saldo) {
         this.agencia = agencia;
         this.numero = numero;
         this.saldo = saldo;
     }
 
-    
-    public void Saque(double valor) {
-        if (valor <= saldo) {
+    public void saque(double valor) {
+        if (valor > 0 && valor <= saldo) {
             saldo -= valor;
-        } else {
-            System.out.println("Saldo insuficiente.");
         }
     }
 
-    //GETS E SETS
-    public void Deposito(double valor) {
-        saldo += valor;
+    public void deposito(double valor) {
+        if (valor > 0) {
+            saldo += valor;
+        }
     }
+
+    //gets e sets
     public String getAgencia() {
         return agencia;
     }

@@ -3,14 +3,13 @@ public class Cliente {
     private int idade;
     private Conta conta;
 
-    //CONSTRUTOR
     public Cliente(String nome, int idade, Conta conta) {
         this.nome = nome;
         this.idade = idade;
         this.conta = conta;
     }
 
-    //GETS E SETS
+    //gets e sets
     public String getNome() {
         return nome;
     }
