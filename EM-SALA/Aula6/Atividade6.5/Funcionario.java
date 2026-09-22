@@ -14,10 +14,6 @@ public class Funcionario extends ClienteEspecial{
 
     //================= METODOS
 
-    public Funcionario(String string, int i, Conta conta, String string2) {
-        //TODO Auto-generated constructor stub
-    }
-
     public void RenovarEstoque(Item item, int quantidade) {
         int estoqueAtual = item.getQuantidadeEstoque();
         item.setQuantidadeEstoque(estoqueAtual + quantidade);
@@ -49,10 +45,5 @@ public class Funcionario extends ClienteEspecial{
     }
     public void setSalario(double salario) {
         this.salario = salario;
-    }
-
-    public void InvestimentoEspecial() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'InvestimentoEspecial'");
     }
 }

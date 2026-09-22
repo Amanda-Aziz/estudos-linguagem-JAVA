@@ -1,14 +1,12 @@
 import java.util.Random;
 
 public class Funcionario extends Cliente {
-
     private String cargo;
 
     public Funcionario(String nome, int idade, Conta conta, String cargo) {
         super(nome, idade, conta);
         this.cargo = cargo;
     }
-
 
     public void investimentoEspecial(double valor) {
 
@@ -26,6 +24,7 @@ public class Funcionario extends Cliente {
         }
     }
 
+    //get e set
     public String getCargo() {
         return cargo;
     }

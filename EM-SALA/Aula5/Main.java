@@ -20,15 +20,11 @@ public class Main {
         for (int i = 0; i < 10; i++) {
 
             ((Investimento) cliente1.getConta()).investir(100);
-
             ((Investimento) cliente2.getConta()).investir(100);
-
             ((Investimento) cliente3.getConta()).investir(100);
 
             funcionario1.investimentoEspecial(100);
-
             funcionario2.investimentoEspecial(100);
-
             funcionario3.investimentoEspecial(100);
         }
 
@@ -38,15 +34,11 @@ public class Main {
         System.out.println("===== SALDOS FINAIS =====");
 
         System.out.println(cliente1.getNome() +": R$ "+cliente1.getConta().getSaldo());
-
         System.out.println(cliente2.getNome() +": R$ "+cliente2.getConta().getSaldo());
-
         System.out.println(cliente3.getNome() + ": R$ " + cliente3.getConta().getSaldo());
 
         System.out.println(funcionario1.getNome() + ": R$ " + funcionario1.getConta().getSaldo());
-
         System.out.println(funcionario2.getNome() + ": R$ " + funcionario2.getConta().getSaldo());
-
         System.out.println(funcionario3.getNome() + ": R$ " +funcionario3.getConta().getSaldo());
     }
 }
