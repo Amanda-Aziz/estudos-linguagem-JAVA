@@ -3,6 +3,26 @@ public class Cliente {
     private String nome;
     private double valor;
 
+    //construtor
+    public Cliente(Ticket entrada, String nome, double valor) {
+        this.entrada = entrada;
+        this.nome = nome;
+        this.valor = valor;
+    }
+
+    //metodos
+    public void calculo(){
+        if(entrada != null){
+            System.out.println("Desconto anunciado: " + entrada.desconto);
+            double novovalor = entrada.desconto * valor;
+            System.out.println("Novo valor: " + novovalor);
+            System.out.println("O valor do Ticket é: " + valor + "; E o tipo do Ticket é: " + entrada);
+        }
+        else
+            System.out.println("\nTicket não inserido.");
+
+    }
+
     //GETS E SETS
     public String getNome() {
         return nome;
@@ -22,16 +42,4 @@ public class Cliente {
         this.nome = nome;
         this.valor = valor;
     }    
-
-    public void calculo(){
-        if(entrada != null){
-            System.out.println("Desconto anunciado: " + entrada.desconto);
-            double novovalor = entrada.desconto * valor;
-            System.out.println("Novo valor: " + novovalor);
-            System.out.println("O valor do Ticket é: " + valor + "; E o tipo do Ticket é: " + entrada);
-        }
-        else
-            System.out.println("\nTicket não inserido.");
-
-    }
 }

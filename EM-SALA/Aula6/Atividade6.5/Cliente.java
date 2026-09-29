@@ -18,9 +18,9 @@ public class Cliente {
 
     //================= MÉTODOS
 
-    public Cliente(String nome2, int idade2, Conta conta) {
-        //TODO Auto-generated constructor stub
-    }
+    // public Cliente(String nome2, int idade2, Conta conta) {
+    //     //TODO Auto-generated constructor stub
+    // }
 
     public void Adicionar(Item item) {
         for (int i = 0; i < carrinhoDeCompras.length; i++) {
