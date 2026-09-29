@@ -1,7 +1,27 @@
-public class Cliente<Produto> {
+public class Cliente {
     private String nome;
     private boolean vip;
     private Produto[] carrinho;
+
+    //gets e sets
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public boolean isVip() {
+        return vip;
+    }
+    public void setVip(boolean vip) {
+        this.vip = vip;
+    }
+    public Produto[] getCarrinho() {
+        return carrinho;
+    }
+    public void setCarrinho(Produto[] carrinho) {
+        this.carrinho = carrinho;
+    }
 
     //CONSTRUTOR
     public Cliente(String nome, boolean vip) {
@@ -9,7 +29,6 @@ public class Cliente<Produto> {
         this.vip = vip;
         this.carrinho = new Produto[10];
     }
-
 
     //METODOS
     public void adicionarProduto(Produto produto) {
@@ -54,7 +73,6 @@ public class Cliente<Produto> {
     }
 
     public void comprar() {
-
         double total = 0;
 
         for (int i = 0; i < carrinho.length; i++) {
@@ -79,25 +97,5 @@ public class Cliente<Produto> {
         for (int i = 0; i < carrinho.length; i++) {
             carrinho[i] = null;
         }
-    }
-
-    //gets e sets
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-    public boolean isVip() {
-        return vip;
-    }
-    public void setVip(boolean vip) {
-        this.vip = vip;
-    }
-    public Produto[] getCarrinho() {
-        return carrinho;
-    }
-    public void setCarrinho(Produto[] carrinho) {
-        this.carrinho = carrinho;
     }
 }
