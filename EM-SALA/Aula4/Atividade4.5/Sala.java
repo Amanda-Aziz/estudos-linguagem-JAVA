@@ -5,7 +5,6 @@ public class Sala{
     private int diaDeAula;
 
     //CONSTRUTOR
-
     public Sala(String nome, boolean ocupada) {
         this.nome = nome;
         this.ocupada = ocupada;

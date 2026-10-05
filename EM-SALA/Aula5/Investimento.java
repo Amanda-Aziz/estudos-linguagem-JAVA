@@ -1,7 +1,14 @@
 import java.util.Random;
-
 public class Investimento extends Conta {
     private String risco;
+    
+    //get e set
+    public String getRisco() {
+        return risco;
+    }
+    public void setRisco(String risco) {
+        this.risco = risco;
+    }
 
     public Investimento(String agencia, String numero, double saldo, String risco) {
         super(agencia, numero, saldo);
@@ -28,13 +35,5 @@ public class Investimento extends Conta {
                 setSaldo(getSaldo() + rendimento);
             }
         }
-    }
-
-    //get e set
-    public String getRisco() {
-        return risco;
-    }
-    public void setRisco(String risco) {
-        this.risco = risco;
     }
 }

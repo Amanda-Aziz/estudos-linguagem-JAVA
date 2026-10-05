@@ -3,12 +3,6 @@ public class Cliente {
     private int idade;
     private Conta conta;
 
-    public Cliente(String nome, int idade, Conta conta) {
-        this.nome = nome;
-        this.idade = idade;
-        this.conta = conta;
-    }
-
     //gets e sets
     public String getNome() {
         return nome;
@@ -26,6 +20,12 @@ public class Cliente {
         return conta;
     }
     public void setConta(Conta conta) {
+        this.conta = conta;
+    }
+
+    public Cliente(String nome, int idade, Conta conta) {
+        this.nome = nome;
+        this.idade = idade;
         this.conta = conta;
     }
 }

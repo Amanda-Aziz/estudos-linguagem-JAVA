@@ -3,17 +3,11 @@ public class Main {
     public static void main(String[] args) {
 
         Cliente cliente1 = new Cliente("Amanda",20,new Investimento("001", "1001", 1000.00, "baixo"));
-
         Cliente cliente2 = new Cliente("Pedro",21,new Investimento("001", "1002", 1500.00, "medio"));
-
         Cliente cliente3 = new Cliente("Thais",34,new Investimento("001", "1003", 2000.00, "alto"));
-
         Funcionario funcionario1 = new Funcionario("Romy",49,new Conta("002", "2001", 1000.00),"Gerente");
-
         Funcionario funcionario2 = new Funcionario("Gabriel",16,new Conta("002", "2002", 1500.00),"Analista");
-
         Funcionario funcionario3 = new Funcionario("Alexandre",67,new Conta("002", "2003", 2000.00),"Diretor");
-
 
         // 10 investimentos
 

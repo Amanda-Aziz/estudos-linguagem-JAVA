@@ -1,19 +1,10 @@
 public class Produto {
-
     private String nome;
     private boolean disponibilidade;
     private String descricao;
     private double valor;
 
-    public Produto(String nome, boolean disponibilidade,
-                   String descricao, double valor) {
-
-        this.nome = nome;
-        this.disponibilidade = disponibilidade;
-        this.descricao = descricao;
-        this.valor = valor;
-    }
-
+    //gets e sets
     public String getNome() {
         return nome;
     }
@@ -43,6 +34,13 @@ public class Produto {
     }
 
     public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public Produto(String nome, boolean disponibilidade,String descricao, double valor) {
+        this.nome = nome;
+        this.disponibilidade = disponibilidade;
+        this.descricao = descricao;
         this.valor = valor;
     }
 }

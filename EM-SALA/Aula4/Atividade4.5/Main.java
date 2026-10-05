@@ -4,7 +4,7 @@ public class Main {
         Aluno aluno1 = new Aluno("Amanda",20,1001);
         Aluno aluno2 = new Aluno("Pedro",21,1002);
         Aluno aluno3 = new Aluno("Kawan",22,1003);
-        
+
         Sala sala = new Sala("Sala 101",false);
 
         // COLOCANDO OS ALUNOS EM TURMA
@@ -22,9 +22,6 @@ public class Main {
         professor.Chamada(chamada);
         professor.TerminarAula();
 
-        System.out.println(
-            "Próximo dia de aula: "
-            + sala.getDiaDeAula()
-        );
+        System.out.println("Próximo dia de aula: " + sala.getDiaDeAula());
     }
 }
