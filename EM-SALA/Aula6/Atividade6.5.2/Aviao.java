@@ -21,7 +21,7 @@ public class Aviao extends Veiculo {
         } else {
             double novaVelocidade = getVelocidadeAtual() + 10;
             if (novaVelocidade > getVelocidadeMaxima()) {
-                novaVelocidade = getVelocidadeMaxima();
+                novaVelocidade = getVelocidadeMaxima(); //diminuiu para a velocidade max pq passou
             }
             setVelocidadeAtual(novaVelocidade);
         }
@@ -34,7 +34,7 @@ public class Aviao extends Veiculo {
             setVelocidadeAtual(getVelocidadeAtual() - 10);
             if (getVelocidadeAtual() < 200) {
                 setVelocidadeAtual(200);
-                voando = false;
+                voando = false; 
                 System.out.println("O avião pousou!");
             }
         } else {

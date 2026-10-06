@@ -1,5 +1,4 @@
 public class Veiculo {
-
     private String marca;
     private boolean estado;
     private double tanque;
@@ -7,67 +6,6 @@ public class Veiculo {
     private double velocidadeAtual;
     private double litragemTanque;
     private double velocidadeMaxima;
-
-    // ============================================================ CONSTRUTOR
-    public Veiculo(String marca, boolean estado, double tanque, double consumo, double velocidadeAtual, double litragemTanque, double velocidadeMaxima) {
-        this.marca = marca;
-        this.estado = estado;
-        this.tanque = tanque;
-        this.consumo = consumo;
-        this.velocidadeAtual = velocidadeAtual;
-        this.litragemTanque = litragemTanque;
-        this.velocidadeMaxima = velocidadeMaxima;
-    }
-
-    // ============================================================ METODOS
-    public void Chavear() {
-        estado = !estado;
-    }
-
-    public void Acelerar() {
-        if (velocidadeAtual < velocidadeMaxima) {
-            velocidadeAtual++;
-
-            if (velocidadeAtual > velocidadeMaxima) {
-                velocidadeAtual = velocidadeMaxima;
-            }
-        }
-    }
-    
-    // ===============================================
-    
-    public void Frear() {
-        if (velocidadeAtual > 0) {
-            velocidadeAtual--;
-
-            if (velocidadeAtual < 0) {
-                velocidadeAtual = 0;
-            }
-        }
-    }
-    
-    // ===============================================
-    
-    public void Corrida(double distancia) {
-        double litrosGastos = distancia * consumo;
-
-        if (litrosGastos > litragemTanque) {
-            double distanciaPercorrida = litragemTanque / consumo;
-            double distanciaFaltante = distancia - distanciaPercorrida;
-
-            velocidadeAtual = 0;
-            litragemTanque = 0;
-
-            System.out.println("Combustível insuficiente!");
-            System.out.println("Faltam " + distanciaFaltante + " km para completar a corrida.");
-        } else {
-            litragemTanque -= litrosGastos;
-
-            System.out.println("Corrida realizada com sucesso!");
-            System.out.println("Combustível restante: " + litragemTanque);
-        }
-    }
-
 
     // ============================================================ GETS E SETS
     public String getMarca() {
@@ -125,4 +63,59 @@ public class Veiculo {
     public void setVelocidadeMaxima(double velocidadeMaxima) {
         this.velocidadeMaxima = velocidadeMaxima;
     }
+
+    // ============================================================ CONSTRUTOR
+    public Veiculo(String marca, boolean estado, double tanque, double consumo, double velocidadeAtual, double litragemTanque, double velocidadeMaxima) {
+        this.marca = marca;
+        this.estado = estado;
+        this.tanque = tanque;
+        this.consumo = consumo;
+        this.velocidadeAtual = velocidadeAtual;
+        this.litragemTanque = litragemTanque;
+        this.velocidadeMaxima = velocidadeMaxima;
+    }
+
+    // ============================================================ METODOS
+    public void Chavear() {
+        estado = !estado;
+    }
+
+    public void Acelerar() {
+        if (velocidadeAtual < velocidadeMaxima) {
+            velocidadeAtual++;
+            if (velocidadeAtual > velocidadeMaxima) {
+                velocidadeAtual = velocidadeMaxima;
+            }
+        }
+    }
+    
+    // ===============================================
+    
+    public void Frear() {
+        if (velocidadeAtual > 0) {
+            velocidadeAtual--;
+            if (velocidadeAtual < 0) {
+                velocidadeAtual = 0;
+            }
+        }
+    }
+    
+    // ===============================================
+    
+    public void Corrida(double distancia) {
+        double litrosGastos = distancia * consumo;
+        if (litrosGastos > litragemTanque) {
+            double distanciaPercorrida = litragemTanque / consumo;
+            double distanciaFaltante = distancia - distanciaPercorrida;
+            velocidadeAtual = 0;
+            litragemTanque = 0;
+            System.out.println("Combustível insuficiente!");
+            System.out.println("Faltam " + distanciaFaltante + " km para completar a corrida.");
+        } else {
+            litragemTanque -= litrosGastos; //litragemTanque = litragemTanque - litrosGastos
+            System.out.println("Corrida realizada com sucesso!");
+            System.out.println("Combustível restante: " + litragemTanque);
+        }
+    }
+
 }

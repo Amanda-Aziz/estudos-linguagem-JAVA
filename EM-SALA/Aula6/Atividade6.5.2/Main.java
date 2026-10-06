@@ -14,7 +14,6 @@ public class Main {
 
         // Liga
         carro.Chavear();
-
         System.out.println("Carro ligado: " + carro.isEstado());
 
         // Acelera
@@ -30,7 +29,6 @@ public class Main {
 
         // Corrida
         carro.Corrida(100);
-
         System.out.println("Tanque após corrida: "+ carro.getTanque());
 
         // Desliga o carro
@@ -51,7 +49,6 @@ public class Main {
 
         // Liga
         aviao.Chavear();
-
         System.out.println("Avião ligado: " + aviao.isEstado());
 
         // Acelera ate 200
