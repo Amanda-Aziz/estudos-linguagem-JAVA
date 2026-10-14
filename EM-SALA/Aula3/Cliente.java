@@ -16,6 +16,8 @@ public class Cliente {
     public void setValor(double valor) {
         this.valor = valor;
     }
+    
+    //construtor sem ticket
     public Cliente(String nome, double valor){
         this.nome = nome;
         this.valor = valor;
@@ -34,10 +36,10 @@ public class Cliente {
             System.out.println("Desconto anunciado: " + entrada.desconto);
             double novovalor = entrada.desconto * valor;
             System.out.println("Novo valor: " + novovalor);
-            System.out.println("O valor do Ticket é: " + valor + "; E o tipo do Ticket é: " + entrada);
-        }
-        else
+            System.out.println("O valor do Ticket é: " + valor);
+            System.out.println("E o tipo do Ticket é: " + entrada);
+        }else{
             System.out.println("\nTicket não inserido.");
-
+        }
     }
 }
