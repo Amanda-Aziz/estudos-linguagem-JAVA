@@ -24,6 +24,7 @@ public class Aluno{
             throw nie;
         }else{
             nota = (nota1 + nota2)/2; 
+            System.out.println("A media do aluno e: " + nota);
         }
     }
 }

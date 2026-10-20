@@ -1,7 +1,5 @@
 // PASSO 1: declarar
-
 // PASSO 2: lançar
-
 // PASSO 3: tratar
 
 public class NotaInvalidaException extends Exception{
